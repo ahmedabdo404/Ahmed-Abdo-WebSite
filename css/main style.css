@@ -439,9 +439,7 @@ footer .contact .contact-icons i {
     color: var(--font-white-color);
     font-size: 35px;
     margin: 15px;
-    cursor: pointer;
 }
-
 
 footer .inner-footer {
     position: absolute;
@@ -459,4 +457,3 @@ footer .inner-footer .copyright{
     width: auto;
     height: fit-content;
 }
-

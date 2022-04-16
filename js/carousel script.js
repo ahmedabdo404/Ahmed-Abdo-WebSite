@@ -1,4 +1,5 @@
 //#region catch elements
+let imgsContainer = document.querySelector(".img-container");
 let nextBtn = document.getElementById("next")
 let prevBtn = document.getElementById("prev")
 let indecators = document.getElementById("indecators")
@@ -10,6 +11,7 @@ ulElement.setAttribute("id", "pagination")
 
 //#region variables
 let imgs = Array.from(document.querySelectorAll(".img-container img"));
+let intervalTime = parseInt(imgsContainer.getAttribute("data-interval"));
 let slidesCount = imgs.length;
 let curSlide = 1;
 //#endregion
@@ -74,5 +76,6 @@ function prev(){
 //#endregion
 
 //#region change image interval
-setInterval(next, 5000);
+console.log("IntervalTime is:", intervalTime);
+let interval = setInterval(next, intervalTime);
 //#endregion

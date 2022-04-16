@@ -1,0 +1,99 @@
+:root {
+    --buttons-color: #ffffff;
+    --indicator-color: #ffffff;
+    --indicator-active-color: #ffffff51;
+    --slide-Number-color: #8c00ff;
+    --slide-font-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* images */
+.img-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.img-container img {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transition: opacity 0.5s;
+    z-index: -1;
+}
+
+.img-container img.active {
+    opacity: 1;
+}
+
+/* buttons */
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#prev,
+#next {
+    font-size: 35px;
+    color: var(--buttons-color);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#next {
+    right: 25px;
+}
+
+#prev {
+    left: 50px;
+}
+
+/* indecators (li buttons)*/
+#indecators ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#indecators ul li{
+    margin: 0 7px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--indicator-color);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* active action (click) */
+#indecators ul li:active{
+    outline: 6px solid var(--indicator-active-color);
+}
+
+/* active class */
+#indecators ul li.active{
+    background-color: var(--indicator-color);
+    z-index: 1;
+}

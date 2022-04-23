@@ -30,13 +30,13 @@
 
 <p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=ahmedabdo404&show_icons=true&locale=en&layout=compact" alt="ahmedabdo404" /></p>
 
-<p><img align="center" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
+<p align="center"><img align="center" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
 <h3 align="center">Connect with me:</h3>
 <p align="center">
   <a href="https://www.linkedin.com/in/ahmed-abdo-306259229/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/ahmed-abdo-306259229/" height="30" width="40" /></a>
 
-  <a href="https://www.hackerrank.com/viralrbhadeshiya" target="blank"><img align="center"
+  <a href="https://www.hackerrank.com/ahmed_elzahed404" target="blank"><img align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
       alt="Viral Bhadeshiya" height="30" width="40" /></a>
 </p>
@@ -44,11 +44,9 @@
 
 <hr>
 
-
 <p align="center">
-  <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api?username=viralbhadeshiya&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000">
+  <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api?username=ahmedabdo404&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000">
 
-  <img src ="https://github-readme-streak-stats.herokuapp.com?user=aveek-saha&theme=darcula&hide_border=true&background=FFFFFF00">
-  <br>
+  <img src ="https://github-readme-streak-stats.herokuapp.com?user=ahmedabdo404&theme=darcula&hide_border=true&background=FFFFFF00">
   <br>
  </p>

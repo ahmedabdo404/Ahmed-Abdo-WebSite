@@ -1,8 +1,9 @@
 
 ![](https://github.com/halfrost/halfrost/blob/master/icons/header_.png)
+<p align="right"> <img src="https://komarev.com/ghpvc/?username=ahmedabdo404&label=Profile%20views&color=0e75b6&style=flat" alt="ahmedabdo404" /> </p>
 <h1 align="center">Hi 👋, I'm Ahmed Adbo</h1>
 <h3 align="center">I'm a Full Stack developer</h3>
-<p align="right"> <img src="https://komarev.com/ghpvc/?username=ahmedabdo404&label=Profile%20views&color=0e75b6&style=flat" alt="ahmedabdo404" /> </p>
+
 
 <h3 align="center">My Tools:</h3>
 <div align="center">
@@ -24,22 +25,23 @@
   <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a>
   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a>
 </div>
-<br>
 
 <hr>
 
 <p align="center"><img align="center" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
+
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=ahmedabdo404&show_icons=true&locale=en&layout=compact" alt="ahmedabdo404" /></p>
+
+<h3 align="center">Connect with me:</h3>
+<div align="center">
   <a href="https://www.linkedin.com/in/ahmed-abdo-306259229/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/ahmed-abdo-306259229/" height="30" width="40" /></a>
 
   <a href="https://www.hackerrank.com/ahmed_elzahed404" target="blank"><img align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
       alt="ahmedabdo404" height="30" width="40" /></a>
-</p>
+</div>
 
-<p align="right"><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs?username=ahmedabdo404&show_icons=true&locale=en&layout=compact" alt="ahmedabdo404" /></p>
 
 <hr>
 

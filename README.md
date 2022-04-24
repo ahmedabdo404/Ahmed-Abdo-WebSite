@@ -1,4 +1,6 @@
+<!-- Cover -->
 ![](https://github.com/halfrost/halfrost/blob/master/icons/header_.png)
+<!-- about -->
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=ahmedabdo404&label=Profile%20views&color=0e75b6&style=flat" alt="ahmedabdo404" /> </p>
 <h1 align="center">Hi 👋, I'm Ahmed Adbo</h1>
 <h3 align="center">I'm a Full Stack developer using .Net Technology and Angular Framework and more</h3>

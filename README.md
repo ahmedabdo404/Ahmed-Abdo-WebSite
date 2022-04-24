@@ -34,20 +34,32 @@
 <p align="center"><img align="center" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" />
 
 <!-- languages -->
-<p align="center">
+<div style="display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;">
+<p>
 <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedabdo404&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php">
 </p>
 
 <!-- contact -->
-<h3 align="center">Connect with me:</h3>
+<div>
+  <h3>Connect with me:</h3>
 
-<div align="center">
-<a align="center" href="https://ahmedabdo404.github.io/ahmedabdo404/"><img  alt="Website" src="https://img.shields.io/badge/Website-ahmedAbdo-blue?style=flat-square&logo=google-chrome"></a>
+  <div>
+  <span>
+  <a href="https://ahmedabdo404.github.io/ahmedabdo404/"><img  alt="Website" src="https://img.shields.io/badge/Website-ahmedAbdo-blue?style=flat-square&logo=google-chrome"></a>
+  </span>
 
-<a align="center" href="mailto:ahmed.elzahed404@gmail.com"><img  alt="Email" src="https://img.shields.io/badge/Email-ahmed.elzahed404@gmail.com-blue?style=flat-square&logo=gmail"></a>
+  <span>
+  <a href="mailto:ahmed.elzahed404@gmail.com"><img  alt="Email" src="https://img.shields.io/badge/Email-ahmed.elzahed404@gmail.com-blue?style=flat-square&logo=gmail"></a>
+  </span>
 
-<a align="center" href="https://www.linkedin.com/in/ahmed-abdo-306259229/"><img  alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ahmedAbdo-blue?style=flat-square&logo=linkedin"></a>
-
+  <span>
+  <a href="https://www.linkedin.com/in/ahmed-abdo-306259229/"><img  alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ahmedAbdo-blue?style=flat-square&logo=linkedin"></a>
+  </span>
+</div>
+</div>
 </div>
 
 <hr>
@@ -58,4 +70,4 @@
 
   <img align="center" src ="https://github-readme-streak-stats.herokuapp.com?user=ahmedabdo404&theme=darcula&hide_border=true&background=FFFFFF00">
   <br>
- </div>
+</div>

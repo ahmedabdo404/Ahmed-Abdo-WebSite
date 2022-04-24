@@ -34,7 +34,8 @@
 <p align="center"><img align="center" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" />
 
 <!-- languages -->
-<div style="display: flex;
+<div align="center"
+    style="display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;">
@@ -43,7 +44,7 @@
   </p>
 
 <!-- contact -->
-  <div>
+  <div align="center">
   <h3>Connect with me:</h3>
 
   <div>

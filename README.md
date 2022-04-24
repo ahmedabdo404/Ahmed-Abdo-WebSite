@@ -41,30 +41,21 @@
 <!-- contact -->
 <h3 align="center">Connect with me:</h3>
 
-<div style="
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;">
-<a href="https://ahmedabdo404.github.io/ahmedabdo404/"><img align="center" alt="Website" src="https://img.shields.io/badge/Website-ahmedAbdo-blue?style=flat-square&logo=google-chrome"></a>
+<div align="center">
+<a align="center" href="https://ahmedabdo404.github.io/ahmedabdo404/"><img  alt="Website" src="https://img.shields.io/badge/Website-ahmedAbdo-blue?style=flat-square&logo=google-chrome"></a>
 
-<a href="mailto:ahmed.elzahed404@gmail.com"><img align="center" alt="Email" src="https://img.shields.io/badge/Email-ahmed.elzahed404@gmail.com-blue?style=flat-square&logo=gmail"></a>
+<a align="center" href="mailto:ahmed.elzahed404@gmail.com"><img  alt="Email" src="https://img.shields.io/badge/Email-ahmed.elzahed404@gmail.com-blue?style=flat-square&logo=gmail"></a>
 
-<a href="https://www.linkedin.com/in/ahmed-abdo-306259229/"><img align="center" alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ahmedAbdo-blue?style=flat-square&logo=linkedin"></a>
+<a align="center" href="https://www.linkedin.com/in/ahmed-abdo-306259229/"><img  alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ahmedAbdo-blue?style=flat-square&logo=linkedin"></a>
 
 </div>
 
 <hr>
 
 <!-- github status -->
-<div style="
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;">
-  <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api?username=ahmedabdo404&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000">
+<div align="center">
+  <img align="center" height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api?username=ahmedabdo404&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000">
 
-  <img src ="https://github-readme-streak-stats.herokuapp.com?user=ahmedabdo404&theme=darcula&hide_border=true&background=FFFFFF00">
+  <img align="center" src ="https://github-readme-streak-stats.herokuapp.com?user=ahmedabdo404&theme=darcula&hide_border=true&background=FFFFFF00">
   <br>
  </div>

@@ -1,11 +1,11 @@
-
 ![](https://github.com/halfrost/halfrost/blob/master/icons/header_.png)
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=ahmedabdo404&label=Profile%20views&color=0e75b6&style=flat" alt="ahmedabdo404" /> </p>
 <h1 align="center">Hi 👋, I'm Ahmed Adbo</h1>
-<h3 align="center">I'm a Full Stack developer</h3>
+<h3 align="center">I'm a Full Stack developer using .Net Technology and Angular Framework and more</h3>
 
-
-<h3 align="center">My Tools:</h3>
+<br>
+<!-- Tools and Frameworks -->
+<h3 align="center">Tools and Frameworks:</h3>
 <div align="center">
   <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a>
   <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a>
@@ -28,28 +28,41 @@
 
 <hr>
 
-<p align="center"><img align="center" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
+<!-- gif image -->
+<p align="center"><img align="center" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" />
 
-  <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedabdo404&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php">
-
+<!-- languages -->
+<p align="center">
+<img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedabdo404&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php">
+</p>
 
 <!-- contact -->
 <h3 align="center">Connect with me:</h3>
 
-<p align="center">
-<a href="https://ahmedabdo404.github.io/ahmedabdo404/"><img alt="Website" src="https://img.shields.io/badge/Website-ahmedAbdo-blue?style=flat-square&logo=google-chrome"></a>
+<div style="
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;">
+<a href="https://ahmedabdo404.github.io/ahmedabdo404/"><img align="center" alt="Website" src="https://img.shields.io/badge/Website-ahmedAbdo-blue?style=flat-square&logo=google-chrome"></a>
 
-<a href="https://www.linkedin.com/in/ahmed-abdo-306259229/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ahmedAbdo-blue?style=flat-square&logo=linkedin"></a>
+<a href="mailto:ahmed.elzahed404@gmail.com"><img align="center" alt="Email" src="https://img.shields.io/badge/Email-ahmed.elzahed404@gmail.com-blue?style=flat-square&logo=gmail"></a>
 
-<a href="mailto:ahmed.elzahed404@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-ahmed.elzahed404@gmail.com-blue?style=flat-square&logo=gmail"></a>
-</p>
+<a href="https://www.linkedin.com/in/ahmed-abdo-306259229/"><img align="center" alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ahmedAbdo-blue?style=flat-square&logo=linkedin"></a>
+
+</div>
 
 <hr>
 
-<p align="center">
-
+<!-- github status -->
+<div style="
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;">
   <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api?username=ahmedabdo404&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000">
 
   <img src ="https://github-readme-streak-stats.herokuapp.com?user=ahmedabdo404&theme=darcula&hide_border=true&background=FFFFFF00">
   <br>
- </p>
+ </div>

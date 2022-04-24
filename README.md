@@ -35,15 +35,15 @@
 
 <!-- languages -->
 <div style="display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;">
-<p>
-<img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedabdo404&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php">
-</p>
+  <p>
+  <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedabdo404&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php">
+  </p>
 
 <!-- contact -->
-<div>
+  <div>
   <h3>Connect with me:</h3>
 
   <div>

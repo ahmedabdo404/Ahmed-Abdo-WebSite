@@ -1,5 +1,5 @@
 
-![](https://github.com/halfrost/halfrost/blob/master/icons/header_.png)
+<!-- ![](https://github.com/halfrost/halfrost/blob/master/icons/header_.png) -->
 <p align="right"> <img src="https://komarev.com/ghpvc/?username=ahmedabdo404&label=Profile%20views&color=0e75b6&style=flat" alt="ahmedabdo404" /> </p>
 <h1 align="center">Hi 👋, I'm Ahmed Adbo</h1>
 <h3 align="center">I'm a Full Stack developer</h3>
@@ -30,21 +30,27 @@
 
 <p align="center"><img align="center" src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" alt="adam-pw" /></p>
 
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=ahmedabdo404&show_icons=true&locale=en&layout=compact" alt="ahmedabdo404" /></p>
-
-<h3 align="center">Connect with me:</h3>
-<div align="center">
-  <a href="https://www.linkedin.com/in/ahmed-abdo-306259229/" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/ahmed-abdo-306259229/" height="30" width="40" /></a>
+<h3 align="left">Connect with me:</h3>
+<div align="left">
 
   <a href="https://www.hackerrank.com/ahmed_elzahed404" target="blank"><img
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
-      alt="ahmedabdo404" height="30" width="40" /></a>
+      alt="ahmedabdo404" height="40" width="40" /></a>
+
+  <a href="https://github.com/ahmedabdo404" target="blank"><img
+      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgithub.githubassets.com%2Fimages%2Fmodules%2Flogos_page%2FGitHub-Mark.png&f=1&nofb=1"
+      alt="ahmedabdo404" height="40" width="40" /></a>
+  
+  <a href="https://www.linkedin.com/in/ahmed-abdo-306259229/" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/ahmed-abdo-306259229/" height="40" width="40" /></a>
+
 </div>
 
 
 <hr>
 
 <p align="center">
+  <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmedabdo404&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php">
+
   <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api?username=ahmedabdo404&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000">
 
   <img src ="https://github-readme-streak-stats.herokuapp.com?user=ahmedabdo404&theme=darcula&hide_border=true&background=FFFFFF00">

@@ -60,11 +60,20 @@ header .container::after {
 }
 
 #nav-links {
+
     width: 200px;
+    max-width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+    #nav-links a p {
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
 }
 
 .logo img {
@@ -73,6 +82,32 @@ header .container::after {
 }
 
 /* end of header */
+
+
+/* start of back to top */
+.back-top {
+    position: fixed;
+    display: flex;
+    bottom: 2%;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    z-index: 5;
+    cursor: pointer;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.2s all;
+    /* align-items: center; */
+}
+
+.back-top i {
+    font-size: 40px;
+    color: var(--main-color)
+}
+
+/* end of back to top*/
 
 /*start of Landing */
 .landing {
@@ -278,14 +313,13 @@ header .container::after {
 }
 
 #AboutMe-section>div {
-    border: 2px var(--main-color) solid;
-    border-radius: 15px;
+
     width: 47.5%;
     padding: 0.6rem;
 }
 
 #Summary-text p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: start;
 }
 
@@ -308,7 +342,7 @@ header .container::after {
 }
 
 #Skilled-in p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: bold;
     text-align: start;
 }
@@ -317,7 +351,7 @@ header .container::after {
     #AboutMe-section {
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     #AboutMe-section>div {
@@ -360,7 +394,6 @@ header .container::after {
     margin-bottom: 25px;
 }
 
-
 .sections-text::before {
     content: "";
     position: absolute;
@@ -395,17 +428,31 @@ header .container::after {
     }
 }
 
-@media (max-width: 344px) {
-
-    .skills-container .sections-text::before {
+@media (max-width: 350px) {
+    .sections-text::before {
         width: 40%;
-        top: 70px;
+        top: 30px;
+    }
+
+    .sections-text::after {
+        top: 30px;
+    }
+
+    .sections-text {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 275px) {
+    .skills-container .sections-text::before {
+        top: 40px;
     }
 
     .skills-container .sections-text::after {
-        top: 70px;
+        top: 40px;
     }
 }
+
 
 .skills-section {
     display: flex;
@@ -418,10 +465,14 @@ header .container::after {
     width: 30%;
 }
 
+.skills-section .TAF-card>p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+
 .skills-section .TAF {
     border: 2px var(--main-color) solid;
     border-radius: 15px;
-    margin-top: 0.3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -575,6 +626,7 @@ footer .inner-footer .copyright span {
     width: 100%;
     position: absolute;
     left: 0;
+    z-index: 0;
 }
 
 #animation h1 {
@@ -671,22 +723,6 @@ footer .inner-footer .copyright span {
 
     100% {
         transform: translate3d(85px, 0, 0);
-    }
-}
-
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-    #animation .waves {
-        height: 40px;
-        min-height: 40px;
-    }
-
-    #animation .content {
-        height: 30vh;
-    }
-
-    h1 {
-        font-size: 24px;
     }
 }
 

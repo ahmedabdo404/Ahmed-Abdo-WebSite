@@ -49,15 +49,15 @@
 
   <div>
   <span>
-  <a href="https://www.ahmedelzahed.com"><img alt="Website" src="https://img.shields.io/badge/Website-ahmedelzahed.com-blue?style=flat-square&logo=google-chrome"></a>
+  <a href="https://www.ahmedelzahed.com" target="_blank"><img alt="Website" src="https://img.shields.io/badge/Website-ahmedelzahed.com-blue?style=flat-square&logo=google-chrome"></a>
   </span>
 
   <span>
-  <a href="mailto:admin@ahmedelzahed.com"><img  alt="Email" src="https://img.shields.io/badge/Email-admin@ahmedelzahed.com-blue?style=flat-square&logo=gmail"></a>
+  <a href="mailto:admin@ahmedelzahed.com" target="_blank"><img  alt="Email" src="https://img.shields.io/badge/Email-admin@ahmedelzahed.com-blue?style=flat-square&logo=gmail"></a>
   </span>
 
   <span>
-  <a href="https://www.linkedin.com/in/ahmed-abdo-306259229/"><img  alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ahmedAbdo-blue?style=flat-square&logo=linkedin"></a>
+  <a href="https://www.linkedin.com/in/ahmed-abdo-306259229/" target="_blank"><img  alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-ahmedAbdo-blue?style=flat-square&logo=linkedin"></a>
   </span>
 </div>
 </div>

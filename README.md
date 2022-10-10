@@ -49,11 +49,11 @@
 
   <div>
   <span>
-  <a href="https://ahmedabdo404.github.io/ahmedabdo404/"><img  alt="Website" src="https://img.shields.io/badge/Website-ahmedAbdo-blue?style=flat-square&logo=google-chrome"></a>
+  <a href="www.ahmedelzahed.com"><img alt="Website" src="https://img.shields.io/badge/Website-ahmedelzahed.com-blue?style=flat-square&logo=google-chrome"></a>
   </span>
 
   <span>
-  <a href="mailto:ahmed.elzahed404@gmail.com"><img  alt="Email" src="https://img.shields.io/badge/Email-ahmed.elzahed404@gmail.com-blue?style=flat-square&logo=gmail"></a>
+  <a href="mailto:admin@ahmedelzahed.com"><img  alt="Email" src="https://img.shields.io/badge/Email-admin@ahmedelzahed.com-blue?style=flat-square&logo=gmail"></a>
   </span>
 
   <span>

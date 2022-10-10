@@ -9,7 +9,7 @@
 }
 
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -31,13 +31,14 @@ a {
     text-decoration: none;
 }
 
-/* header */
+/* start of header */
 header {
     position: absolute;
     left: 0;
     width: 100%;
     z-index: 1;
 }
+
 header .container {
     padding: 0 10px;
     margin: 0 auto;
@@ -52,19 +53,28 @@ header .container::after {
     content: '';
     position: absolute;
     height: 0.5px;
-    width: calc(100% - 20px); 
+    width: calc(100% - 20px);
     background-color: var(--font-white-color);
     bottom: 9px;
     right: 10px
 }
 
-/* logo */
+#nav-links {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .logo img {
     /* padding: 5px 0; */
     width: 60px;
 }
 
-/* Landing */
+/* end of header */
+
+/*start of Landing */
 .landing {
     min-height: 100vh;
     position: relative;
@@ -123,7 +133,7 @@ header .container::after {
         right: 0;
         top: 60%;
         text-align: center;
-        transform: translateY(-50%)    ;
+        transform: translateY(-50%);
     }
 }
 
@@ -150,12 +160,13 @@ header .container::after {
     justify-content: center;
     align-items: center;
 }
+
 .rounded-shape {
     width: 430px;
     height: 430x;
     z-index: 2;
     position: absolute;
-    margin-left: 400px;    
+    margin-left: 400px;
 }
 
 .me {
@@ -164,28 +175,28 @@ header .container::after {
     border-radius: 50%;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1300px) {
     .rounded-shape {
         max-width: 400px;
         max-height: 400px;
     }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
     .rounded-shape {
         width: 390px;
         height: 390px;
     }
 }
 
-@media (max-width: 950px){
+@media (max-width: 950px) {
     .rounded-shape {
         width: 290px;
         height: 290px;
     }
 }
 
-@media (max-width: 830px){
+@media (max-width: 830px) {
     .rounded-shape {
         width: 270px;
         height: 270px;
@@ -194,28 +205,28 @@ header .container::after {
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
     .rounded-shape {
         width: 250px;
         height: 250px;
     }
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
     .rounded-shape {
         max-width: 200px;
         max-height: 200px;
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 350px) {
     .rounded-shape {
         max-width: 180px;
         max-height: 180px;
     }
 }
 
-@media (max-width: 300px){
+@media (max-width: 300px) {
     .rounded-shape {
         display: none;
     }
@@ -223,7 +234,7 @@ header .container::after {
 
 .outer-shape {
     animation: rotate1 30s infinite linear reverse;
-    
+
 }
 
 .inner-shape {
@@ -231,40 +242,126 @@ header .container::after {
 }
 
 @keyframes rotate1 {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
 
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
 
 @keyframes rotate2 {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
 
-    100%{
-        transform: rotate(360deg);    
+    100% {
+        transform: rotate(360deg);
     }
 }
 
-/* skills section*/
-.Skills-c {
+/*end of Landing */
+
+/* start of aboutme section*/
+#AboutMe-c {
     position: relative;
-    padding: 25px;
+    padding: 1rem;
     text-align: center;
 }
 
-.skills-text {
+#AboutMe-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#AboutMe-section>div {
+    border: 2px var(--main-color) solid;
+    border-radius: 15px;
+    width: 47.5%;
+    padding: 0.6rem;
+}
+
+#Summary-text p {
+    font-size: 0.8rem;
+    text-align: start;
+}
+
+#Skilled-in {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#Skilled-in #Services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+#Skilled-in #Services>div {
+    width: 50%;
+}
+
+#Skilled-in p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: start;
+}
+
+@media (max-width: 1200px) {
+    #AboutMe-section {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #AboutMe-section>div {
+        margin: 0.6rem;
+        width: 95%;
+    }
+}
+
+@media (max-width: 650px) {
+    #Skilled-in {
+        flex-direction: column;
+    }
+
+    #Skilled-in #Services>div {
+        width: 100%;
+    }
+
+    #Summary-text p {
+        font-size: 0.7rem;
+    }
+
+    #Skilled-in p {
+        font-size: 0.6rem;
+    }
+}
+
+/* end of aboutme */
+
+/* start of skills section*/
+.Skills-c {
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sections-text {
     color: var(--font-dark-color);
     position: relative;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
 
-.skills-text::before {
+
+.sections-text::before {
     content: "";
     position: absolute;
     top: 40px;
@@ -275,7 +372,7 @@ header .container::after {
     background-color: var(--main-color);
 }
 
-.skills-text::after {
+.sections-text::after {
     content: "";
     position: absolute;
     top: 40px;
@@ -288,9 +385,25 @@ header .container::after {
     border-radius: 50%;
 }
 
-@media (max-width: 500px){
-    .skills-text::before {
+@media (max-width: 500px) {
+    .sections-text::before {
         width: 40%;
+    }
+
+    .sections-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 344px) {
+
+    .skills-container .sections-text::before {
+        width: 40%;
+        top: 70px;
+    }
+
+    .skills-container .sections-text::after {
+        top: 70px;
     }
 }
 
@@ -301,8 +414,34 @@ header .container::after {
     flex-wrap: wrap;
 }
 
+.skills-section .TAF-card {
+    width: 30%;
+}
+
+.skills-section .TAF {
+    border: 2px var(--main-color) solid;
+    border-radius: 15px;
+    margin-top: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: alternate-reverse;
+}
+
+@media (max-width: 500px) {
+    .skills-section {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .skills-section .TAF-card {
+        width: 100%;
+    }
+}
+
 .skills-section a {
-    margin: 10px;
+    margin: 10px 25px
 }
 
 @media (min-width: 768px) {
@@ -310,23 +449,28 @@ header .container::after {
         width: 750px
     }
 }
+
 @media (min-width: 992px) {
     .container {
         width: 970px
     }
 }
+
 @media (min-width: 1200px) {
     .container {
         width: 1170px
     }
 }
+
 @media (min-width: 1500px) {
     .container {
         width: 1450px
     }
 }
 
-/* footer */
+/* end of skills section*/
+
+/* start of footer */
 footer {
     position: relative;
     bottom: 0;
@@ -380,7 +524,7 @@ footer #contact p:after {
     border-radius: 50%;
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
     footer #contact p:before {
         width: 75%;
     }
@@ -394,6 +538,7 @@ footer #contac .contact-icons {
     flex-wrap: wrap;
 
 }
+
 footer #contact .contact-icons i {
     color: var(--font-white-color);
     font-size: 35px;
@@ -412,7 +557,7 @@ footer .inner-footer {
     padding: 0 5%;
 }
 
-footer .inner-footer .copyright{
+footer .inner-footer .copyright {
     font-size: 15px;
     width: auto;
     height: fit-content;
@@ -422,3 +567,127 @@ footer .inner-footer .copyright span {
     font-weight: bolder;
     font-size: 16px !important;
 }
+
+/* end of footer */
+
+/* start of anitmation */
+#animation {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+#animation h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
+}
+
+#animation p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #333333;
+}
+
+#animation .header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgba(83, 58, 183, 0.25) 0%, rgba(0, 171, 193, 0.25) 100%);
+    color: white;
+}
+
+#animation .logo {
+    width: 50px;
+    fill: white;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#animation .inner-header {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#animation .flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#animation .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+
+#animation .content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
+/* Animation */
+
+#animation .parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+#animation .parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+#animation .parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+#animation .parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+#animation .parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    #animation .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    #animation .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* end of anitmation */

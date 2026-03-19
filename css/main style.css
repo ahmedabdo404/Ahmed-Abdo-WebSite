@@ -64,7 +64,7 @@ header .container::after {
     width: 200px;
     max-width: 250px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -114,9 +114,9 @@ header .container::after {
     min-height: 100vh;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 
 .alpha-box {
@@ -130,15 +130,14 @@ header .container::after {
 }
 
 .welcome-text {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
     width: auto;
-    padding: 0 0 0 180px;
+    padding: 0;
+    margin-bottom: 70px;
     display: flex;
     flex-direction: column;
-    text-align: start;
+    text-align: center;
+    align-items: center;
     color: var(--font-white-color);
     z-index: 1;
 }
@@ -146,29 +145,34 @@ header .container::after {
 .welcome-text::before {
     content: "";
     background-color: var(--main-color);
-    width: 450px;
-    height: 180px;
+    width: calc(100% + 50px);
+    height: calc(100% + 80px);
     position: absolute;
-    left: -5%;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
     border-radius: 18px;
 }
 
 @media (max-width: 830px) {
     .welcome-text::before {
-        display: none;
+        display: block;
+        height: calc(100% + 40px);
+        /* Tighter wrap so it doesn't push into the shapes */
+        width: calc(100% + 30px);
     }
 
     .welcome-text {
-        position: absolute;
+        position: relative;
         padding: 0;
         width: auto;
-        right: 0;
-        top: 60%;
+        right: auto;
+        top: auto;
         text-align: center;
-        transform: translateY(-50%);
+        transform: none;
+        margin-bottom: 80px;
+        /* Big separator so text absolutely physically clears the shapes! */
     }
 }
 
@@ -194,26 +198,33 @@ header .container::after {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .rounded-shape {
     width: 430px;
-    height: 430x;
+    height: 430px;
     z-index: 2;
+}
+
+.outer-shape,
+.inner-shape {
     position: absolute;
-    margin-left: 400px;
+    inset: 0;
+    margin: auto;
+    border-radius: 50%;
 }
 
 .me {
-    padding: 4%;
+    padding: 13%;
     z-index: 2;
     border-radius: 50%;
 }
 
 @media (max-width: 1300px) {
     .rounded-shape {
-        max-width: 400px;
-        max-height: 400px;
+        width: 400px;
+        height: 400px;
     }
 }
 
@@ -235,8 +246,6 @@ header .container::after {
     .rounded-shape {
         width: 270px;
         height: 270px;
-        margin-left: 0;
-        margin-bottom: 275px;
     }
 }
 
@@ -249,31 +258,36 @@ header .container::after {
 
 @media (max-width: 550px) {
     .rounded-shape {
-        max-width: 200px;
-        max-height: 200px;
+        width: 200px;
+        height: 200px;
     }
 }
 
 @media (max-width: 350px) {
     .rounded-shape {
-        max-width: 180px;
-        max-height: 180px;
-    }
-}
-
-@media (max-width: 300px) {
-    .rounded-shape {
-        display: none;
+        width: 180px;
+        height: 180px;
     }
 }
 
 .outer-shape {
-    animation: rotate1 30s infinite linear reverse;
-
+    border: 2px dashed rgba(255, 255, 255, 0.85);
+    /* Much brighter rendering */
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+    /* Glowing effect */
+    animation: rotate1 20s infinite linear reverse;
 }
 
 .inner-shape {
-    animation: rotate1 30s infinite linear;
+    width: 85% !important;
+    height: 85% !important;
+    border: 5px dotted rgba(255, 255, 255, 0.6);
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
+    animation: rotate1 15s infinite linear;
 }
 
 @keyframes rotate1 {
@@ -286,20 +300,10 @@ header .container::after {
     }
 }
 
-@keyframes rotate2 {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 /*end of Landing */
 
 /* start of aboutme section*/
-#AboutMe-c {
+#aboutMe {
     position: relative;
     padding: 1rem;
     text-align: center;

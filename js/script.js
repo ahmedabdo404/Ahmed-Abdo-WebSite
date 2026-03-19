@@ -20,17 +20,18 @@ function ReSizeAnmationHeight() {
 //#region Events
 window.onresize = ReSizeAnmationHeight
 window.onload = ReSizeAnmationHeight
-window.oncontextmenu = (e)=> e.preventDefault();
+window.oncontextmenu = (e) => e.preventDefault();
 window.onscroll = () => {
   // console.log(window.scrollY)
-  if(window.scrollY >= 650){
-      upBtn.style = ("opacity: 1;")
-  }else{
-      upBtn.style = ("opacity: 0;")
+  if (window.scrollY >= 650) {
+    upBtn.style = ("opacity: 1;")
+  } else {
+    upBtn.style = ("opacity: 0;")
   }
 }
 
-upBtn.onclick = () =>{
-  scrollTo({ top: 0, behavior: "smooth"});
+upBtn.onclick = () => {
+  scrollTo({ top: 0, behavior: "smooth" });
 }
 //#endregion 
+

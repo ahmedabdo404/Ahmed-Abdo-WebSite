@@ -176,6 +176,12 @@ header .container::after {
     }
 }
 
+@media (max-width: 550px) {
+    .welcome-text::before {
+        display: none;
+    }
+}
+
 /* Paragraph style */
 .h2-style {
     color: var(--font-white-color);
@@ -205,6 +211,26 @@ header .container::after {
     width: 430px;
     height: 430px;
     z-index: 2;
+}
+
+.outer-shape {
+    border: 2px dashed rgba(255, 255, 255, 0.85);
+    /* Much brighter rendering */
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+    /* Glowing effect */
+    animation: rotate1 20s infinite linear reverse;
+}
+
+.inner-shape {
+    width: 85% !important;
+    height: 85% !important;
+    border: 5px dotted rgba(255, 255, 255, 0.6);
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
+    animation: rotate1 15s infinite linear;
 }
 
 .outer-shape,
@@ -268,26 +294,6 @@ header .container::after {
         width: 180px;
         height: 180px;
     }
-}
-
-.outer-shape {
-    border: 2px dashed rgba(255, 255, 255, 0.85);
-    /* Much brighter rendering */
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
-    /* Glowing effect */
-    animation: rotate1 20s infinite linear reverse;
-}
-
-.inner-shape {
-    width: 85% !important;
-    height: 85% !important;
-    border: 5px dotted rgba(255, 255, 255, 0.6);
-    border-top: 5px solid #fff;
-    border-bottom: 5px solid #fff;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
-    animation: rotate1 15s infinite linear;
 }
 
 @keyframes rotate1 {

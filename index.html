@@ -5,310 +5,670 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmed Abdo</title>
-  <!-- css -->
+  <title>Ahmed Abdo — Software Developer</title>
+  <meta name="description"
+    content="Ahmed Abdo is a versatile Software Developer specializing in backend engineering, full-stack web development, and database architecture.">
+  <!-- favicon -->
   <link rel="shortcut icon" href="./imgs/Icons/Icon-logo.ico">
+  <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main style.css" />
-  <link rel="stylesheet" href="css/my carousel.css">
   <!-- icons -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <!-- scripts -->
-  <script src="js/carousel-script.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 
 <body>
-  <!-- start of header -->
-  <header>
-    <div class="container">
-      <a class="logo">
-        <img src="imgs/Icons/my-new-AA-logo(white).png" alt="Logo">
+  <!-- ============ NAVBAR ============ -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#">
+        <img src="imgs/Icons/my-new-AA-logo(white).png" alt="Ahmed Abdo Logo">
       </a>
       <nav id="nav-links">
-        <a href="#aboutMe">
-          <p class=" p-style">About</p>
-        </a>
-        <a href="#contact">
-          <p class="p-style">Contact</p>
-        </a>
+        <a href="#aboutMe" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+        <i class='bx bx-sun' id="themeIcon"></i>
+      </button>
     </div>
   </header>
-  <!-- end of header -->
 
-  <!-- start of back to top icon -->
-  <div class="back-top">
-    <i class='bx bx-up-arrow-alt'></i>
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#aboutMe" class="mobile-nav-link">About</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
   </div>
-  <!-- end of back to top icon -->
 
-  <!--start of Landing -->
-  <section class="landing">
-    <section class="img-container" data-interval="8000">
-      <!-- Unsplash Images will be dynamically injected via carousel-script.js -->
-      <div class="buttons">
-        <span id="indecators"></span>
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class='bx bx-chevron-up'></i>
+  </button>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-glow glow-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-title">Hi, I'm <span class="gradient-text">Ahmed Abdo</span> 👋</h1>
+        <p class="hero-subtitle">Transforming Ideas into Elegant Software Solutions</p>
+        <p class="hero-description">
+          A versatile Software Developer crafting robust, scalable applications across
+          backend engineering, full-stack web development, and database architecture.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" id="hero-contact-btn">
+            <i class='bx bx-envelope'></i> Get In Touch
+          </a>
+          <a href="#aboutMe" class="btn btn-ghost" id="hero-about-btn">
+            <i class='bx bx-user'></i> About Me
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span id="NumOfExpYears" class="stat-number">6+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Passion for Technology</span>
+          </div>
+        </div>
       </div>
-      <i id="next" class='bx bxs-right-arrow'></i>
-      <i id="prev" class="bx bxs-left-arrow"></i>
-    </section>
-    <div class="welcome-text">
-      <h2 class="h2-style">Hi, I'm Ahmed Abdo 👋</h2>
-      <p class="p-style">Transforming Ideas into Elegant Software Solutions.</p>
+
+      <div class="hero-visual">
+        <div class="orbit-container">
+          <div class="orbit orbit-outer">
+            <div class="orbit-dot dot-1"><i class='bx bxl-angular'></i></div>
+            <div class="orbit-dot dot-2"><i class='bx bxl-nodejs'></i></div>
+            <div class="orbit-dot dot-3"><i class='bx bxl-python'></i></div>
+          </div>
+          <div class="orbit orbit-inner">
+            <div class="orbit-dot dot-5"><i class='bx bxl-microsoft'></i></div>
+            <div class="orbit-dot dot-6"><i class='bx bxl-docker'></i></div>
+            <div class="orbit-dot dot-7"><i class='bx bxl-tux'></i></div>
+          </div>
+          <div class="avatar-ring">
+            <div class="avatar-ring-inner">
+              <img src="imgs/Other/me.jpeg" class="avatar-img" alt="Ahmed Abdo">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="alpha-box"></div>
-    <div class="shapes-c">
-      <div class="rounded-shape outer-shape"></div>
-      <img src="imgs/Other/me.jpeg" class="rounded-shape me" alt="Ahmed-Abdo">
-      <div class="rounded-shape inner-shape"></div>
+
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow">
+        <i class='bx bx-chevron-down'></i>
+      </div>
     </div>
   </section>
-  <!--end of Landing -->
 
-  <!--start of info section -->
-  <section id="info">
-
-    <!--start of animation section -->
-    <section id="animation">
-      <div class="header">
-        <!--Content before waves-->
-        <div class="inner-header flex">
-          <!--Just the logo.. Don't mind this-->
-          <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
-            <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
-          </svg>
-        </div>
-
-        <!--Waves Container-->
-        <div>
-          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-            </defs>
-            <g class="parallax">
-              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-            </g>
-          </svg>
-        </div>
-        <!--Waves end-->
-
+  <!-- ============ ABOUT SECTION ============ -->
+  <section id="aboutMe" class="section">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
       </div>
-      <!--Header ends-->
-    </section>
-    <!--end of animation section -->
 
-    <!--start of about me section -->
-    <section id="aboutMe">
-      <div id="AboutMe-container">
-        <h2 class="sections-text">About Me</h2>
-        <div id="AboutMe-section">
+      <div class="about-grid" data-aos="fade-up">
+        <div class="about-card glass-card">
+          <div class="about-icon-wrap">
+            <i class='bx bx-user-circle'></i>
+          </div>
+          <h3>My Story</h3>
+          <p>
+            I am Ahmed Abdo, a versatile Software Developer with a proven track record across
+            software engineering, hardware, and networking industries. I have a deep passion
+            for building robust, scalable applications and solving complex technical challenges.
+          </p>
+        </div>
 
-          <div id="Summary-text">
-            <p>
-              I am Ahmed Abdo, a versatile Software Developer with a proven track record across the software
-              engineering, hardware, and networking industries. I have a deep passion for building robust, scalable
-              applications and solving complex technical challenges.
+        <div class="about-card glass-card">
+          <div class="about-icon-wrap">
+            <i class='bx bx-code-alt'></i>
+          </div>
+          <h3>Core Expertise</h3>
+          <ul class="expertise-list">
+            <li><i class='bx bxs-check-circle'></i> Backend Engineering</li>
+            <li><i class='bx bxs-check-circle'></i> Desktop App Development</li>
+            <li><i class='bx bxs-check-circle'></i> Database Architecture</li>
+            <li><i class='bx bxs-check-circle'></i> REST APIs & Web Services</li>
+            <li><i class='bx bxs-check-circle'></i> Network Infrastructure</li>
+            <li><i class='bx bxs-check-circle'></i> Full-Stack Web Development</li>
+          </ul>
+        </div>
+
+        <div class="about-card glass-card">
+          <div class="about-icon-wrap">
+            <i class='bx bx-target-lock'></i>
+          </div>
+          <h3>My Approach</h3>
+          <p>
+            I believe in writing clean, maintainable code that scales. Every project is
+            an opportunity to engineer elegant solutions that balance performance,
+            security, and exceptional user experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <section id="skills" class="section section-dark">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Use</span>
+        <h2 class="section-title">Tools & Frameworks</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-wrapper" data-aos="fade-up">
+        <!-- Backend -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge">
+              <i class='bx bx-server'></i>
+            </div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-grid">
+            <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer" class="skill-item" title="C#">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+                alt="csharp">
+              <span>C#</span>
+            </a>
+            <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer" class="skill-item" title=".NET">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg"
+                alt="dotnet">
+              <span>.NET</span>
+            </a>
+            <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer" class="skill-item"
+              title="SQL Server">
+              <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql">
+              <span>SQL Server</span>
+            </a>
+            <a href="https://www.mysql.com/" target="_blank" rel="noreferrer" class="skill-item" title="MySQL">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                alt="mysql">
+              <span>MySQL</span>
+            </a>
+            <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer" class="skill-item" title="MongoDB">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png" alt="MongoDB">
+              <span>MongoDB</span>
+            </a>
+            <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer" class="skill-item"
+              title="PostgreSQL">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                alt="postgresql">
+              <span>PostgreSQL</span>
+            </a>
+            <a href="https://nodejs.org" target="_blank" rel="noreferrer" class="skill-item" title="Node.js">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                alt="nodejs">
+              <span>Node.js</span>
+            </a>
+            <a href="https://expressjs.com" target="_blank" rel="noreferrer" class="skill-item" title="Express">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+                alt="express" class="inverted">
+              <span>Express</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge">
+              <i class='bx bx-layer'></i>
+            </div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-grid">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"
+              class="skill-item" title="JavaScript">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                alt="javascript">
+              <span>JavaScript</span>
+            </a>
+            <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer" class="skill-item" title="HTML5">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                alt="html5">
+              <span>HTML5</span>
+            </a>
+            <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer" class="skill-item" title="CSS3">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                alt="css3">
+              <span>CSS3</span>
+            </a>
+            <a href="https://sass-lang.com" target="_blank" rel="noreferrer" class="skill-item" title="Sass">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+                alt="sass">
+              <span>Sass</span>
+            </a>
+            <a href="https://getbootstrap.com" target="_blank" rel="noreferrer" class="skill-item" title="Bootstrap">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+                alt="bootstrap">
+              <span>Bootstrap</span>
+            </a>
+            <a href="https://reactjs.org/" target="_blank" rel="noreferrer" class="skill-item" title="React">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                alt="React">
+              <span>React</span>
+            </a>
+            <a href="https://angular.io" target="_blank" rel="noreferrer" class="skill-item" title="Angular">
+              <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular">
+              <span>Angular</span>
+            </a>
+            <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer" class="skill-item"
+              title="TypeScript">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                alt="typescript">
+              <span>TypeScript</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tools & Other -->
+        <div class="skill-category">
+          <div class="skill-category-header">
+            <div class="skill-icon-badge">
+              <i class='bx bx-wrench'></i>
+            </div>
+            <h3>Tools & Other</h3>
+          </div>
+          <div class="skill-grid">
+            <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer" class="skill-item" title="C++">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+                alt="cplusplus">
+              <span>C++</span>
+            </a>
+            <a href="https://www.python.org" target="_blank" rel="noreferrer" class="skill-item" title="Python">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                alt="python">
+              <span>Python</span>
+            </a>
+            <a href="https://git-scm.com/" target="_blank" rel="noreferrer" class="skill-item" title="Git">
+              <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git">
+              <span>Git</span>
+            </a>
+            <a href="https://www.linux.org/" target="_blank" rel="noreferrer" class="skill-item" title="Linux">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                alt="linux">
+              <span>Linux</span>
+            </a>
+            <a href="https://azure.microsoft.com/en-us" target="_blank" rel="noreferrer" class="skill-item"
+              title="Azure">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg"
+                alt="Azure">
+              <span>Azure</span>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer" class="skill-item" title="GitHub">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
+                alt="Github" class="inverted">
+              <span>GitHub</span>
+            </a>
+            <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer" class="skill-item"
+              title="VS Code">
+              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+                alt="VS Code">
+              <span>VS Code</span>
+            </a>
+            <a href="https://www.docker.com/" target="_blank" rel="noreferrer" class="skill-item" title="Docker">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                alt="Docker">
+              <span>Docker</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <section id="projects" class="section">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- ── Part 1: Companies & Organizations ── -->
+      <div class="projects-subsection" data-aos="fade-up">
+        <div class="projects-sub-header">
+          <div class="projects-sub-icon"><i class='bx bx-buildings'></i></div>
+          <div>
+            <h3 class="projects-sub-title">Companies &amp; Organizations</h3>
+            <p class="projects-sub-desc">Professional projects delivered for businesses and government bodies.</p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-bar-chart-alt-2'></i></div>
+              <span class="project-tag">Analytics</span>
+            </div>
+            <h3 class="project-name">Interactive Dashboards Reporting</h3>
+            <p class="project-desc">Dynamic, data-driven reporting dashboards delivering real-time insights and visual
+              analytics.</p>
+            <a href="https://coppelis.com/interactive-dashboards-for-reporting/" target="_blank" rel="noreferrer"
+              class="project-link" id="proj-dashboards">
+              <span>View Project</span> <i class='bx bx-link-external'></i>
+            </a>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-dumbbell'></i></div>
+              <span class="project-tag">Health &amp; Fitness</span>
+            </div>
+            <h3 class="project-name">Kaj — Fitness</h3>
+            <p class="project-desc">A modern fitness platform connecting users with personalized workout plans and
+              nutrition tracking.</p>
+            <a href="https://kaj.fitness/" target="_blank" rel="noreferrer" class="project-link" id="proj-kaj">
+              <span>View Project</span> <i class='bx bx-link-external'></i>
+            </a>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-store-alt'></i></div>
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <h3 class="project-name">International Mill — Online Store</h3>
+            <p class="project-desc">A full-featured online storefront for an international milling and agriculture
+              company.</p>
+            <a href="https://www.intlmill.com/" target="_blank" rel="noreferrer" class="project-link"
+              id="proj-intlmill">
+              <span>View Project</span> <i class='bx bx-link-external'></i>
+            </a>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-package'></i></div>
+              <span class="project-tag">Logistics</span>
+            </div>
+            <h3 class="project-name">DHUB — Delivery Management System</h3>
+            <p class="project-desc">An end-to-end delivery management platform streamlining logistics, tracking, and
+              operations.</p>
+            <a href="https://staging.dhub.pro/#/auth/login" target="_blank" rel="noreferrer" class="project-link"
+              id="proj-dhub">
+              <span>View Project</span> <i class='bx bx-link-external'></i>
+            </a>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-health'></i></div>
+              <span class="project-tag">Government</span>
+            </div>
+            <h3 class="project-name">EDA — Egyptian Drug Authority</h3>
+            <p class="project-desc">The official digital portal for Egypt's drug regulatory authority, providing
+              pharmaceutical services.</p>
+            <a href="https://edaegypt.gov.eg/" target="_blank" rel="noreferrer" class="project-link" id="proj-eda">
+              <span>View Project</span> <i class='bx bx-link-external'></i>
+            </a>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-planet'></i></div>
+              <span class="project-tag">Government</span>
+            </div>
+            <h3 class="project-name">SSA — Saudi Space Agency</h3>
+            <p class="project-desc">The Saudi Space Agency's national web presence, showcasing space programs and
+              achievements.</p>
+            <a href="https://ssa.gov.sa/en/home/?path=/" target="_blank" rel="noreferrer" class="project-link"
+              id="proj-ssa">
+              <span>View Project</span> <i class='bx bx-link-external'></i>
+            </a>
+          </div>
+
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-palette'></i></div>
+              <span class="project-tag">Government</span>
+            </div>
+            <h3 class="project-name">MOC E-Palace — Egyptian Ministry of Culture</h3>
+            <p class="project-desc">A digital cultural palace for Egypt's Ministry of Culture, presenting Egypt's rich
+              heritage online.</p>
+            <a href="https://epalace.gov.eg/" target="_blank" rel="noreferrer" class="project-link" id="proj-epalace">
+              <span>View Project</span> <i class='bx bx-link-external'></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <!-- ── end Part 1 ── -->
+
+      <!-- ── Part 2: Personal & Open-Source Projects ── -->
+      <div class="projects-subsection" data-aos="fade-up">
+        <div class="projects-sub-header">
+          <div class="projects-sub-icon projects-sub-icon--os"><i class='bx bxl-github'></i></div>
+          <div>
+            <h3 class="projects-sub-title">Personal &amp; Open-Source Projects</h3>
+            <p class="projects-sub-desc">Side projects and open-source contributions built out of passion and curiosity.
             </p>
           </div>
-          <div id="Skilled-in">
-            <p>Core Areas of Expertise:</p>
-            <div id="Services">
-              <div>
-                <p><i class='bx bxs-check-circle'></i> Backend Engineering</p>
-                <p><i class='bx bxs-check-circle'></i> Desktop App Development</p>
-                <p><i class='bx bxs-check-circle'></i> Database Architecture</p>
-              </div>
-              <div>
-                <p><i class='bx bxs-check-circle'></i> REST APIs & Web Services</p>
-                <p><i class='bx bxs-check-circle'></i> Network Infrastructure</p>
-                <p><i class='bx bxs-check-circle'></i> Full-Stack Web Dev</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!--end of about me section -->
 
-    <!--start of Skills section -->
-    <section class="Skills-c">
-      <div class="skills-container">
-        <h2 class="sections-text">Tools and Frameworks:</h2>
-        <div class="skills-section">
-          <div class="TAF-card">
-            <p>Backend</p>
-            <div class=" TAF">
-              <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-                  alt="csharp" width="60" height="60" />
+        <div class="projects-grid">
+
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-directions'></i></div>
+              <span class="project-tag project-tag--open-source">Open Source</span>
+            </div>
+            <h3 class="project-name">Career-Path-Recommender</h3>
+            <p class="project-desc">An intelligent tool that recommends tailored career paths based on skills,
+              interests, and goals.</p>
+            <div class="project-actions">
+              <a href="https://github.com/ahmedabdo404/Career-Path-Recommender" target="_blank" rel="noreferrer"
+                class="project-link project-link--os" id="proj-career">
+                <span>View on GitHub</span> <i class='bx bxl-github'></i>
               </a>
-              <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg"
-                  alt="dotnet" width="60" height="60" />
-              </a>
-              <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer">
-                <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="60"
-                  height="60" />
-              </a>
-              <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-                  alt="mysql" width="60" height="60" />
-              </a>
-              <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img
-                  src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png" alt="MongoDB" width="60"
-                  height="60" />
-              </a>
-              <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
-                  alt="postgresql" width="60" height="60" />
-              </a>
-              <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-                  alt="nodejs" width="60" height="60" />
-              </a>
-              <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
-                  alt="express" width="60" height="60" />
+              <a href="https://careerpathrecommender.runasp.net/" target="_blank" rel="noreferrer"
+                class="project-link project-link--demo" id="proj-career-demo">
+                <span>Live Demo</span> <i class='bx bx-play-circle'></i>
               </a>
             </div>
           </div>
 
-          <div class="TAF-card">
-            <p>FrontEnd</p>
-            <div class="TAF">
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                  alt="javascript" width="60" height="60" />
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-transfer-alt'></i></div>
+              <span class="project-tag project-tag--open-source">Open Source</span>
+            </div>
+            <h3 class="project-name">TypeTransform</h3>
+            <p class="project-desc">A developer utility for seamlessly converting and transforming data types and
+              formats.</p>
+            <div class="project-actions">
+              <a href="https://github.com/ahmedabdo404/TypeTransform" target="_blank" rel="noreferrer"
+                class="project-link project-link--os" id="proj-typetransform">
+                <span>View on GitHub</span> <i class='bx bxl-github'></i>
               </a>
-
-              <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                  alt="html5" width="60" height="60" />
-              </a>
-
-              <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                  alt="css3" width="60" height="60" />
-              </a>
-
-              <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
-                  alt="sass" width="60" height="60" />
-              </a>
-
-              <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                  alt="bootstrap" width="60" height="60" />
-              </a>
-
-              <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-                  alt="React" width="60" height="60" />
-              </a>
-
-              <a href="https://angular.io" target="_blank" rel="noreferrer"> <img
-                  src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="60"
-                  height="60" />
-              </a>
-
-              <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-                  alt="typescript" width="60" height="60" />
+              <a href="https://ahmedabdo404.github.io/TypeTransform/" target="_blank" rel="noreferrer"
+                class="project-link project-link--demo" id="proj-typetransform-demo">
+                <span>Live Demo</span> <i class='bx bx-play-circle'></i>
               </a>
             </div>
           </div>
 
-          <div class="TAF-card">
-            <p>Other</p>
-            <div class="TAF">
-              <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
-                  alt="cplusplus" width="60" height="60" />
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-search-alt'></i></div>
+              <span class="project-tag project-tag--open-source">Open Source</span>
+            </div>
+            <h3 class="project-name">GitHub-Detective</h3>
+            <p class="project-desc">A GitHub profile explorer that surfaces detailed insights and analytics about any
+              user.</p>
+            <div class="project-actions">
+              <a href="https://github.com/ahmedabdo404/GitHub-Detective" target="_blank" rel="noreferrer"
+                class="project-link project-link--os" id="proj-ghdetective">
+                <span>View on GitHub</span> <i class='bx bxl-github'></i>
               </a>
-
-              <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-                  alt="python" width="60" height="60" />
+              <a href="https://ahmedabdo404.github.io/GitHub-Detective/" target="_blank" rel="noreferrer"
+                class="project-link project-link--demo" id="proj-ghdetective-demo">
+                <span>Live Demo</span> <i class='bx bx-play-circle'></i>
               </a>
+            </div>
+          </div>
 
-              <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img
-                  src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="60" height="60" />
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-brain'></i></div>
+              <span class="project-tag project-tag--open-source">Open Source</span>
+            </div>
+            <h3 class="project-name">Memorize Game</h3>
+            <p class="project-desc">A fun and interactive memory card game designed to sharpen focus and cognitive
+              recall.</p>
+            <div class="project-actions">
+              <a href="https://github.com/ahmedabdo404/Memorize-game" target="_blank" rel="noreferrer"
+                class="project-link project-link--os" id="proj-memorize">
+                <span>View on GitHub</span> <i class='bx bxl-github'></i>
               </a>
-
-              <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
-                  alt="linux" width="60" height="60" />
+              <a href="https://ahmedabdo404.github.io/Memorize-game/" target="_blank" rel="noreferrer"
+                class="project-link project-link--demo" id="proj-memorize-demo">
+                <span>Live Demo</span> <i class='bx bx-play-circle'></i>
               </a>
+            </div>
+          </div>
 
-              <a href="https://azure.microsoft.com/en-us" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg"
-                  alt="Azure" width="60" height="60" />
-              </a>
-
-              <a href="https://github.com/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
-                  alt="Github" width="60" height="60" />
-              </a>
-
-              <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
-                  alt="VS Code" width="60" height="60" />
-              </a>
-
-              <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
-                  alt="Docker" width="60" height="60" />
+          <div class="project-card glass-card">
+            <div class="project-card-top">
+              <div class="project-icon-wrap"><i class='bx bx-terminal'></i></div>
+              <span class="project-tag project-tag--open-source">Open Source</span>
+            </div>
+            <h3 class="project-name">AI Desktop: Console Chat</h3>
+            <p class="project-desc">A local AI-powered console chat application leveraging Ollama to run language models
+              directly on your desktop.</p>
+            <div class="project-actions">
+              <a href="https://github.com/ahmedabdo404/OLLama-chat" target="_blank" rel="noreferrer"
+                class="project-link project-link--os" id="proj-ollama">
+                <span>View on GitHub</span> <i class='bx bxl-github'></i>
               </a>
             </div>
           </div>
 
         </div>
       </div>
-    </section>
-  </section>
-
-  <!-- start of footer -->
-  <footer>
-    <div id="contact">
-      <div>
-        <p>Contact</p>
-      </div>
-      <div class="contact-icons">
-        <a href="mailto:ahmed.elzahed404@gmail.com" target="_blank" title="Gmail">
-          <i class='bx bxl-gmail'></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/ahmed-abdo-306259229" target="_blank" title="Linkedin">
-          <i class='bx bxl-linkedin-square'></i>
-        </a>
-        <a href="https://github.com/ahmedabdo404" target="_blank" title="Github">
-          <i class='bx bxl-github'></i>
-        </a>
-      </div>
+      <!-- ── end Part 2 ── -->
     </div>
-    <div class="inner-footer">
-      <div class="copyright">
-        &copy; Copyright
-        <a href="https://ahmedabdo404.github.io/Ahmed-Abdo-WebSite" target="_blank" title="Website"
-          style="color: inherit; text-decoration: none; ">
-          <b>Ahmed Abdo</b>
-        </a>
-        . All Rights Reserved <span id="year"></span>
+  </section>
+  <!-- ============ END PROJECTS SECTION ============ -->
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="contact">
+    <div class="footer-glow"></div>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="imgs/Icons/my-new-AA-logo(white).png" alt="Ahmed Abdo Logo" class="footer-logo">
+          <p class="footer-tagline">Building the future, one line at a time.</p>
+        </div>
+        <div class="footer-contact">
+          <h3 class="footer-heading">Let's Connect</h3>
+          <p class="footer-desc">Open to new opportunities and collaborations. Feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:ahmed.elzahed404@gmail.com" target="_blank" title="Gmail" class="contact-link"
+              id="contact-gmail">
+              <div class="contact-icon-wrap">
+                <i class='bx bxl-gmail'></i>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">ahmed.elzahed404@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-abdo-306259229" target="_blank" title="LinkedIn"
+              class="contact-link" id="contact-linkedin">
+              <div class="contact-icon-wrap">
+                <i class='bx bxl-linkedin-square'></i>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">Ahmed Abdo</span>
+              </div>
+            </a>
+            <a href="https://github.com/ahmedabdo404" target="_blank" title="GitHub" class="contact-link"
+              id="contact-github">
+              <div class="contact-icon-wrap">
+                <i class='bx bxl-github'></i>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">ahmedabdo404</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <p class="copyright">
+          &copy; <span id="year"></span>
+          <a href="https://ahmedabdo404.github.io/Ahmed-Abdo-WebSite" target="_blank" title="Website">Ahmed Abdo</a>.
+          All Rights Reserved.
+        </p>
+        <div class="footer-social">
+          <a href="mailto:ahmed.elzahed404@gmail.com" target="_blank" title="Gmail" class="social-icon"
+            id="social-gmail"><i class='bx bxl-gmail'></i></a>
+          <a href="https://www.linkedin.com/in/ahmed-abdo-306259229" target="_blank" title="LinkedIn"
+            class="social-icon" id="social-linkedin"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/ahmedabdo404" target="_blank" title="GitHub" class="social-icon"
+            id="social-github"><i class='bx bxl-github'></i></a>
+        </div>
       </div>
     </div>
   </footer>
-  <!-- end of footer -->
 
 </body>
 

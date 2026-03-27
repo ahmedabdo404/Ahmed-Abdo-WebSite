@@ -135,12 +135,12 @@ body.light .orbit-dot {
 }
 
 body.light footer {
-  background: #ffffff;
+  background: #e8edf8;
   border-top-color: rgba(0, 0, 0, 0.08);
 }
 
 body.light .section-dark {
-  background: #e8edf8;
+  background: var(--clr-bg);
 }
 
 body.light .footer-logo {
@@ -910,7 +910,7 @@ body.light .theme-toggle:hover {
    ============================================================ */
 .scroll-indicator {
   position: absolute;
-  bottom: var(--sp-lg);
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
